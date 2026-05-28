@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Feedback</h1>
+
+<div class="card">
+  <input type="text" id="name" placeholder="Your Name">
+  <textarea id="message" placeholder="Your feedback"></textarea>
+  <button onclick="submitFeedback()">Submit</button>
+</div>
+
+<button onclick="goHome()">Back</button>
+
+<script>
+function submitFeedback() {
+  const name = document.getElementById("name").value;
+  const msg = document.getElementById("message").value;
+
+  alert("Thank you for feedback, " + name + "!");
+}
+
+function goHome() {
+  window.location.href = "home.html";
+}
+</script>
+
+</body>
+</html>

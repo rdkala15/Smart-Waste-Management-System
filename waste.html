@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Waste Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="center-page">
+
+<h1>Waste Management</h1>
+
+<div class="card">
+  <h3>Segregation</h3>
+  <input type="text" id="wasteInput" placeholder="Enter waste item">
+  <button onclick="classify()">Check</button>
+  <p id="result"></p>
+</div>
+
+<div class="card">
+  <h3>Schedule Pickup</h3>
+  <input type="text" id="name" placeholder="Name">
+  <input type="text" id="address" placeholder="Address">
+  <input type="text" id="type" placeholder="Waste Type">
+  <input type="date" id="date">
+  <button onclick="schedule()">Submit</button>
+</div>
+
+<div class="card">
+  <h3>Admin - Requests</h3>
+  <button onclick="loadPickups()">Load Requests</button>
+  <ul id="list"></ul>
+</div>
+
+<button onclick="goHome()">Back</button>
+
+<script src="script.js"></script>
+
+<script>
+function goHome() {
+  window.location.href = "home.html";
+}
+</script>
+
+</body>
+</html>

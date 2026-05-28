@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Waste System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="center-page">
+
+<h1>♻️ Smart Waste Management</h1>
+
+<div class="card">
+  <h2>Waste Segregation</h2>
+  <input type="text" id="wasteInput" placeholder="Enter waste item">
+  <button onclick="classify()">Check</button>
+  <p id="result"></p>
+</div>
+
+<div class="card">
+  <h2>Schedule Pickup</h2>
+  <input type="text" id="name" placeholder="Name">
+  <input type="text" id="address" placeholder="Address">
+  <input type="text" id="type" placeholder="Waste Type">
+  <input type="date" id="date">
+  <button onclick="schedule()">Submit</button>
+</div>
+
+<div class="card">
+  <h2>Admin Dashboard</h2>
+  <button onclick="loadPickups()">Load Requests</button>
+  <ul id="list"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
